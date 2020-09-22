@@ -5,7 +5,7 @@
     font-weight: 400;
 }
 
-body, div, article, aside, header, footer, main, nav, section, ul, ol, li, button, figure, picture{
+body, div, article, aside, header, footer, main, nav, section, ul, ol, li, button, figure, picture, hr{
     display: flex;
 }
 
@@ -13,4 +13,15 @@ body{
     margin: 0;    
     flex-direction: column;
     background-color: var(--bg-white);
+}
+
+hr{
+    &.divider{
+        background-color: var(--gray-3);
+        height: 1px;
+        width: calc(100% - 2em);
+        margin: 3em 0;
+        border: none;
+        align-self: center;
+    }
 }
